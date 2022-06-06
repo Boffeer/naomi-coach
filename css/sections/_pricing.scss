@@ -1,0 +1,316 @@
+.pricing {
+	position: relative;
+	// background-image: url("../img/pricing/bg.jpg");
+	@include bgset("../img/pricing/bg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 265px;
+	background-color: #f2f6f9;
+}
+
+.pricing__title {
+	margin-bottom: 50px;
+}
+
+.pricing__container {
+	position: relative;
+	z-index: 2;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.pricing__gallery {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.pricing-card__wrap {
+	position: relative;
+	margin-right: 20px;
+}
+.pricing-card__wrap:last-of-type {
+	margin-right: 0;
+}
+.pricing-card__wrap::after {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	right: 0;
+	top: 11px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(100% - 10px);
+	height: 100%;
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 4px 24px rgba(201, 201, 201, 0.25);
+	border-radius: 20px;
+}
+
+.pricing-card {
+	position: relative;
+	z-index: 1;
+	--padding-gap: 25px;
+	background: #ffffff;
+	box-shadow: 0px 4px 24px rgba(232, 232, 232, 0.25);
+	border-radius: 20px;
+	padding-top: 46px;
+	padding-bottom: 60px;
+}
+
+.pricing-card__title {
+	font-weight: 400;
+	font-size: 31px;
+	line-height: 99.5%;
+	text-align: center;
+	background: linear-gradient(
+			77.86deg,
+			rgba(255, 255, 255, 0.06) 11.6%,
+			rgba(255, 255, 255, 0.1) 34.08%,
+			rgba(255, 255, 255, 0.1) 68.26%,
+			rgba(255, 255, 255, 0) 92.01%
+		),
+		#323232;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	margin-bottom: 45px;
+}
+
+.pricing-card__bullets {
+	padding-left: var(--padding-gap);
+	padding-right: var(--padding-gap);
+	margin-bottom: 45px;
+	--bullet-gap: 40px;
+}
+
+.pricing-card__bullet {
+	position: relative;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 140%;
+	color: #3a3a3a;
+	margin-bottom: 20px;
+	padding-left: var(--bullet-gap);
+}
+
+.pricing-card__bullet::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/common/yes-color-2.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.pricing-card__bullet--no {
+	color: var(--c-text-second);
+}
+.pricing-card__bullet--no::before {
+	background-image: url("../img/common/no.svg");
+}
+
+.pricing-card__bullet:last-of-type {
+	margin-bottom: 0;
+}
+.pricing-card__bottom {
+	border-top: 1px solid #d9d9d9;
+	padding-top: 33px;
+	padding-left: var(--padding-gap);
+	padding-right: var(--padding-gap);
+}
+
+.pricing-card__duration {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 140%;
+	color: #3a3a3a;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.pricing-card__price {
+	margin-bottom: 30px;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 99.5%;
+	text-align: center;
+	color: #323232;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pricing-card__price--regular {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 99.5%;
+	text-decoration-line: line-through;
+	color: rgba(50, 50, 50, 0.3);
+	margin-left: 20px;
+}
+
+.pricing-card__button {
+	width: 100%;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	margin-bottom: 20px;
+	mask-size: contain;
+	-webkit-mask-size: contain;
+}
+.pricing-card__avalaible {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 140%;
+	text-align: center;
+	color: #848484;
+}
+.pricing__divider-top {
+	position: absolute;
+	top: -180px;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 580px;
+	background-image: url("../img/common/divider-grey.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	pointer-events: var(--pi-decor);
+}
+
+.pricing-decor__left {
+	position: absolute;
+	top: 30%;
+	left: 0;
+	display: block;
+	width: 220px;
+	height: 260px;
+	background-image: url("../img/pricing/decor-left.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	pointer-events: var(--pi-decor);
+}
+
+.pricing-decor__top-right {
+	position: absolute;
+	top: -90px;
+	right: 0;
+	display: block;
+	width: 270px;
+	height: 350px;
+	background-image: url("../img/pricing/decor-top-right.png");
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	pointer-events: var(--pi-decor);
+}
+
+.pricing-decor__bottom-right {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 3;
+	display: block;
+	width: 504px;
+	height: 768px;
+	background-image: url("../img/pricing/decor-bottom-right.png");
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	pointer-events: var(--pi-decor);
+}
+
+@media (max-width: 1600px) {
+	.pricing-decor__bottom-right {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.pricing {
+		padding-bottom: 135px;
+	}
+	.pricing__container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.pricing-card__title {
+		font-size: 26px;
+		margin-bottom: 25px;
+	}
+	.pricing-card__bullets {
+		--bullet-gap: 30px;
+	}
+	.pricing-decor__bottom-right {
+		display: none;
+	}
+}
+
+@media (max-width: 991px) {
+	.pricing__gallery {
+		display: block;
+		max-width: 100%;
+	}
+	.pricing-card__wrap {
+		margin-right: 0;
+		margin-bottom: 25px;
+	}
+	.pricing-card {
+		padding-top: 25px;
+	}
+	.pricing-card__wrap:last-of-type {
+		margin-bottom: 0;
+	}
+	.pricing-card__title {
+		font-size: 20px;
+	}
+	.pricing-card__bullet {
+		font-size: 14px;
+	}
+	.pricing-card__bullet::before {
+		background-image: url("../img/common/yes.svg");
+		width: 15px;
+		height: 15px;
+	}
+	.pricing-card__bullet--no::before {
+		background-image: url("../img/common/no.svg");
+	}
+	.pricing-card__bullets {
+		margin-bottom: 40px;
+	}
+	.pricing-card__bottom {
+		padding-top: 24px;
+	}
+	.pricing-card__duration {
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+	.pricing-card__price {
+		margin-bottom: 10px;
+	}
+	.pricing-card__button {
+		margin-bottom: 5px;
+	}
+	.pricing-card__avalaible {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 575px) {
+	.pricing {
+		padding-bottom: 100px;
+	}
+	.pricing-card {
+		--padding-gap: 20px;
+	}
+}

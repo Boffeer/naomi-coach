@@ -1,0 +1,75 @@
+.button {
+	display: inline-block;
+	border-radius: 10px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 0.125em;
+	text-transform: uppercase;
+	@include getmask(url("../img/common/button.svg"));
+}
+.button--primary {
+	padding: 40px 33px;
+	color: var(--c-text-on);
+	background: var(--bg-primary);
+	box-shadow: inset 7px 8px 8px rgba(255, 255, 255, 0.09),
+		inset -5px -2px 8px rgba(255, 255, 255, 0.12);
+	transition: all 0.3s ease-in-out;
+	max-width: 400px;
+	width: 100%;
+}
+.button--primary:hover {
+	background: linear-gradient(
+			274.24deg,
+			rgba(255, 255, 255, 0) -1.45%,
+			rgba(255, 255, 255, 0.28) 41.35%,
+			rgba(255, 255, 255, 0) 97.56%
+		),
+		linear-gradient(264.53deg, #4358fc 0%, #4358fc 100%), #121212;
+}
+
+.button--secondary {
+	color: #404040;
+	mask-border: 1px solid var(--c-text-second);
+	background-color: #fff;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-size: 15px;
+	transition: all 0.3s;
+}
+.button--secondary:hover {
+	background-color: #404040;
+	color: #fff;
+}
+
+.input {
+	background: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: rgba(0, 0, 0, 0.19);
+	width: 100%;
+	padding: 22px 16px;
+}
+.input--invalid {
+	border-color: #ff3b30;
+}
+
+.input__wrap {
+	margin-bottom: 10px;
+}
+
+@media (max-width: 575px) {
+	.button--primary {
+		padding: 25px 20px;
+		font-size: 14px;
+		letter-spacing: 0.125em;
+		width: 100%;
+	}
+}

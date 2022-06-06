@@ -1,0 +1,45 @@
+.pop__callback {
+	max-width: 356px;
+	width: 100%;
+	font-weight: 700;
+	padding: 30px;
+}
+.pop__title {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 104.4%;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #333333;
+	margin-bottom: 5px;
+}
+.pop__subtitle {
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 131.4%;
+	text-align: center;
+	color: #333333;
+	margin-bottom: 15px;
+}
+
+.pop__callback-button {
+	font-size: 14px;
+	width: 100%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+@media (max-width: 575px) {
+	.pop__title {
+		font-size: 25px;
+	}
+	.poppa-aligner {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.pop__callback-button {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}

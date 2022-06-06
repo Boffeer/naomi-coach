@@ -1,0 +1,262 @@
+@font-face {
+	src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+		url("../fonts/Montserrat-Regular.woff") format("woff");
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+		url("../fonts/Montserrat-Bold.woff") format("woff");
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--c-primary: #5661fc;
+	--c-text-title: #323232;
+	--c-text-regular: #303034;
+	--c-text-second: #818284;
+	--c-text-on: #fff;
+	--fz-regular: 18px;
+	--fz-title-section: 44px;
+
+	--ff-regular: "Montserrat", "Arial", "Helvetica", sans-serif;
+
+	--bg-primary: linear-gradient(
+			274.24deg,
+			rgba(255, 255, 255, 0) -1.45%,
+			rgba(255, 255, 255, 0.28) 41.35%,
+			rgba(255, 255, 255, 0) 97.56%
+		),
+		linear-gradient(264.53deg, #9443fc 10.33%, #4358fc 95.95%);
+	--pi-decor: none;
+
+	--z-dropdown: 10;
+	--z-tooltip: 20;
+	--z-sticky-header: 90;
+	--z-popup: 100;
+	--z-burger-button: 50;
+	--z-burger: 110;
+}
+
+$fz-p: var(--font-regular);
+$fz-h2: var(--font-title-section);
+
+@mixin transition-mix(
+	$property: all,
+	$duration: 0.2s,
+	$timing: linear,
+	$delay: 0s
+) {
+	transition-property: $property;
+	transition-duration: $duration;
+	transition-delay: $delay;
+	transition-timing-function: $timing;
+}
+
+@mixin position-absolute($top: null, $right: null, $bottom: null, $left: null) {
+	position: absolute;
+	left: $left;
+	right: $right;
+	top: $top;
+	bottom: $bottom;
+}
+
+@mixin buttonPrimary {
+	border-radius: 48px;
+	padding-top: 14px;
+	padding-right: 40px;
+	padding-bottom: 14px;
+	padding-left: 40px;
+	font-weight: 700;
+	font-size: 18px;
+	color: #fff;
+	background-image: var(--bg-button-primary);
+	transition: all 0.2s;
+	&:focus {
+		box-shadow: none;
+		background-image: var(--bg-button-primary--hover);
+		transform: translateY(2px);
+		transition: all 0.2s;
+	}
+	&:hover {
+		box-shadow: none;
+		background-image: var(--bg-button-primary--hover);
+		transform: translateY(2px);
+		transition: all 0.2s;
+	}
+}
+* {
+	outline: none;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.hidden {
+	visibility: hidden;
+}
+a,
+button {
+	cursor: pointer;
+}
+input,
+button {
+	display: inline-block;
+	border: none;
+	padding: 0;
+	background: none;
+}
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol {
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+}
+h2 {
+	font-size: var(--fz-title-section);
+}
+ul,
+ol {
+	list-style: none;
+}
+body {
+	font-family: var(--ff-regular);
+	font-size: var(--fz-base);
+	color: var(--c-text-regular);
+}
+.form-privacy {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	&__checkbox {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 10px;
+		border-radius: 2px;
+		width: 15px;
+		height: 15px;
+		background-color: rgb(130, 130, 130);
+		cursor: pointer;
+		&::after {
+			content: "";
+			position: absolute;
+			display: inline-block;
+			border-radius: 50%;
+			width: 4px;
+			height: 4px;
+		}
+	}
+}
+.form-privacy__checkbox-hidden:checked + .form-privacy__checkbox {
+	background-image: url("../img/form/form-check.svg");
+	background-position: center;
+	background-size: 70%;
+	background-repeat: no-repeat;
+}
+.fixed {
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+// __POPS
+.popups {
+	display: none;
+}
+.pop-thanks {
+	border-radius: 12px;
+	padding: 40px 20px;
+	width: 300px;
+	background-color: #fff;
+}
+
+// Burger
+.burger {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column wrap;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+
+	&__line {
+		transition: all 0.5s;
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 4px;
+		background-color: #333;
+		border-radius: 4px;
+	}
+
+	&--active {
+		.burger__line {
+			transition: all 0.5s;
+
+			&:first-child {
+				transform: rotate(45deg);
+			}
+			&:nth-child(2) {
+				display: none;
+			}
+
+			&:last-child {
+				transform: rotate(-45deg);
+				margin-top: -100%;
+			}
+		}
+	}
+}
+
+.container {
+	padding: 0 10px;
+}
+
+.main {
+	overflow-x: hidden;
+}
+
+@media (min-width: 1199.98px) {
+	.container {
+		max-width: 1170px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@import "common";
+@import "mixins";
+
+@import "components/controls";
+@import "components/popups";
+
+@import "sections/header";
+@import "sections/hero";
+@import "sections/about";
+@import "sections/compare";
+@import "sections/programm";
+@import "sections/consult";
+@import "sections/meet";
+@import "sections/reviews";
+@import "sections/pricing";
+@import "sections/warranty";
+@import "sections/footer";
