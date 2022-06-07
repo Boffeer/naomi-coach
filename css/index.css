@@ -246,6 +246,7 @@ body {
   font-weight: 400;
   font-size: 61px;
   line-height: 120%;
+  letter-spacing: 0.03em;
 }
 
 .section__text--highlight {
@@ -761,7 +762,7 @@ body {
 
 .coach {
   position: relative;
-  padding-top: 250px;
+  padding-top: 90px;
   padding-bottom: 250px;
   margin-bottom: -10px;
   background-color: #341d45;
@@ -773,7 +774,7 @@ body {
 
 .coach__divider-top {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   left: 0;
   right: 0;
   top: 0;
@@ -787,10 +788,11 @@ body {
 
 .coach__pic {
   position: absolute;
-  left: 0;
-  bottom: 90px;
+  z-index: 2;
+  left: 20px;
+  bottom: 0;
   display: block;
-  max-width: 1200px;
+  max-width: 1210px;
   width: 100%;
 }
 
@@ -803,9 +805,12 @@ body {
 }
 
 .coach__info {
-  max-width: 460px;
+  position: relative;
+  z-index: 2;
+  max-width: 490px;
   width: 100%;
   margin-left: auto;
+  margin-right: 70px;
 }
 
 .coach__title {
@@ -955,7 +960,7 @@ body {
 }
 
 .compare {
-  padding-top: 200px;
+  padding-top: 90px;
   padding-bottom: 140px;
   position: relative;
   z-index: 3;
@@ -969,6 +974,7 @@ body {
   width: 100%;
   height: 100%;
   background-image: url("../img/compare/bg.png");
+  pointer-events: var(--pi-decor);
 }
 
 .compare__container {
@@ -1122,7 +1128,7 @@ body {
 
 .programm {
   padding-bottom: 330px;
-  z-index: 4;
+  z-index: 1;
   position: relative;
   background-image: url(../img/programm/bg.jpg);
   background-size: cover;
@@ -1140,7 +1146,7 @@ body {
 }
 
 .programm__subtitle {
-  margin-bottom: 30px;
+  margin-bottom: 55px;
   font-size: 18px;
   line-height: 127%;
   text-align: center;
@@ -1201,7 +1207,7 @@ body {
   border-radius: 20px;
   position: relative;
   z-index: 2;
-  margin-bottom: 52px;
+  margin-bottom: 22px;
 }
 
 .programm-card__top {
@@ -1382,7 +1388,7 @@ body {
 
 .programm__pic {
   display: block;
-  margin-left: -150px;
+  margin-left: -130px;
   margin-right: -230px;
   margin-top: auto;
   pointer-events: var(--pi-decor);
@@ -1390,7 +1396,7 @@ body {
 
 .programm__divider-bottom {
   position: absolute;
-  bottom: -1px;
+  bottom: -10px;
   left: 0;
   right: 0;
   z-index: 2;
@@ -1470,26 +1476,31 @@ body {
   position: relative;
   z-index: 2;
   padding-top: 275px;
-  padding-bottom: 170px;
+  background-color: #341d45;
   background-image: url("../img/consult/bg.jpg");
-  background-image: image-set(url("../img/consult/bg.webp") 1x);
-  background-image: -webkit-image-set(url("../img/consult/bg.webp") 1x);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.consult__container {
+  margin-top: -440px;
+}
+
 .consult__title {
   margin-bottom: 60px;
+  color: #fff;
 }
 
 .consult__bullets {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "b1 b1" "b2 b4" "b3 b5";
+      grid-template-areas: "b1 b1" "b2 b5" "b3 b6" "b4 b7";
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  z-index: 3;
 }
 
 .consult-bullet {
@@ -1519,99 +1530,72 @@ body {
   margin-bottom: -70px;
 }
 
+.consult-bullet:nth-of-type(1) .consult-bullet__pic {
+  width: 180px;
+}
+
 .consult-bullet:nth-of-type(2) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: b2;
   position: relative;
-}
-
-.consult-bullet:nth-of-type(2)::before {
-  content: "";
-  display: block;
-  width: 55px;
-  height: 480px;
-  position: absolute;
-  left: -15px;
-  top: 0;
-  background-image: url("../img/consult/connector-left.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.consult-bullet:nth-of-type(2) .consult-bullet__desc {
-  padding-left: 50px;
-  margin-bottom: 80px;
-}
-
-.consult-bullet:nth-of-type(2) .consult-bullet__pic {
-  height: 150px;
-  margin-top: -20px;
+  margin-top: -80px;
+  margin-bottom: 45px;
+  margin-left: 100px;
 }
 
 .consult-bullet:nth-of-type(3) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: b3;
-  margin-left: -20px;
-}
-
-.consult-bullet:nth-of-type(3) .consult-bullet__pic {
-  height: 130px;
-  margin-top: -20px;
-  margin-left: -20px;
 }
 
 .consult-bullet:nth-of-type(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: b4;
   margin-left: auto;
   max-width: 320px;
   position: relative;
-}
-
-.consult-bullet:nth-of-type(4)::before {
-  content: "";
-  display: block;
-  width: 55px;
-  height: 480px;
-  position: absolute;
-  right: -5px;
-  top: 0;
-  background-image: url("../img/consult/connector-left.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
-.consult-bullet:nth-of-type(4) .consult-bullet__pic {
-  margin-bottom: 22px;
-  margin-left: -20px;
+  margin-left: -10px;
 }
 
 .consult-bullet:nth-of-type(5) {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: b5;
-  -webkit-transform: translateX(60px);
-          transform: translateX(60px);
-  max-width: 320px;
+  margin-right: 25px;
 }
 
 .consult-bullet:nth-of-type(5) .consult-bullet__pic {
-  height: 130px;
-  margin-left: -23px;
   margin-top: -20px;
   margin-bottom: 20px;
 }
 
+.consult-bullet:nth-of-type(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: b6;
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+
+.consult-bullet:nth-of-type(6) .consult-bullet__pic {
+  width: 180px;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.consult-bullet:nth-of-type(7) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: b7;
+  margin-left: 100px;
+}
+
 .consult-bullet__pic {
   display: block;
-  height: 120px;
+  width: 120px;
   margin-bottom: 12px;
 }
 
@@ -1619,20 +1603,20 @@ body {
   display: block;
   -o-object-fit: contain;
      object-fit: contain;
-  height: 100%;
+  width: 100%;
 }
 
 .consult-bullet__desc {
   font-size: 18px;
   line-height: 145%;
   letter-spacing: 0.05em;
-  color: #303034;
+  color: #fff;
 }
 
 .consult__pic {
-  max-width: 650px;
-  margin-top: -515px;
-  margin-left: auto;
+  max-width: 1110px;
+  margin-top: -590px;
+  margin-left: -40px;
   margin-right: auto;
   display: block;
   width: 100%;
@@ -1655,15 +1639,16 @@ body {
 
 .consult__divider {
   position: absolute;
+  z-index: 2;
   left: 0;
-  bottom: -280px;
+  bottom: 0;
   width: 100%;
   height: 580px;
   background-image: url("../img/consult/divider-bottom.png");
-  background-image: image-set(url("../img/consult/divider-bottom.webp") 1x);
-  background-image: -webkit-image-set(url("../img/consult/divider-bottom.webp") 1x);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
+  pointer-events: var(--pi-decor);
 }
 
 @media (max-width: 1600px) {

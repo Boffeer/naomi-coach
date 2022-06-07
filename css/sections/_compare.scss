@@ -1,5 +1,5 @@
 .compare {
-	padding-top: 200px;
+	padding-top: 90px;
 	padding-bottom: 140px;
 	position: relative;
 	z-index: 3;
@@ -13,6 +13,7 @@
 	height: 100%;
 	background-image: url("../img/compare/bg.png");
 	// @include bgset("../img/compare/bg", "png");
+	pointer-events: var(--pi-decor);
 }
 .compare__container {
 	display: flex;

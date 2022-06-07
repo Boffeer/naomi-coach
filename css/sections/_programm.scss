@@ -1,6 +1,6 @@
 .programm {
 	padding-bottom: 330px;
-	z-index: 4;
+	z-index: 1;
 	position: relative;
 	background-image: url(../img/programm/bg.jpg);
 	background-size: cover;
@@ -15,7 +15,7 @@
 	margin-bottom: 10px;
 }
 .programm__subtitle {
-	margin-bottom: 30px;
+	margin-bottom: 55px;
 	font-size: 18px;
 	line-height: 127%;
 	text-align: center;
@@ -61,7 +61,7 @@
 	border-radius: 20px;
 	position: relative;
 	z-index: 2;
-	margin-bottom: 52px;
+	margin-bottom: 22px;
 }
 
 .programm-card__top {
@@ -211,7 +211,7 @@
 
 .programm__pic {
 	display: block;
-	margin-left: -150px;
+	margin-left: -130px;
 	margin-right: -230px;
 	margin-top: auto;
 	pointer-events: var(--pi-decor);
@@ -219,7 +219,7 @@
 
 .programm__divider-bottom {
 	position: absolute;
-	bottom: -1px;
+	bottom: -10px;
 	left: 0;
 	right: 0;
 	z-index: 2;
