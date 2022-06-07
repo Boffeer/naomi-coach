@@ -8,8 +8,9 @@
 }
 .header__container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: start;
+	padding-top: 50px;
 }
 .header-branding {
 	display: inline-block;

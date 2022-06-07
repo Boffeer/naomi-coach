@@ -1,16 +1,32 @@
 @font-face {
-	src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
-		url("../fonts/Montserrat-Regular.woff") format("woff");
-	font-family: "Montserrat";
-	font-weight: 500;
+	src: url("../fonts/roboto/Roboto.woff2") format("woff2"),
+		url("../fonts/roboto/Roboto.woff") format("woff");
+	font-family: "Roboto";
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	src: url("../fonts/roboto/Roboto-bold.woff2") format("woff2"),
+		url("../fonts/roboto/Roboto-bold.woff") format("woff");
+	font-family: "Roboto";
+	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
-		url("../fonts/Montserrat-Bold.woff") format("woff");
-	font-family: "Montserrat";
+	src: url("../fonts/bebas-neue/BebasNeue-Book.woff2") format("woff2"),
+		url("../fonts/bebas-neue/BebasNeue-Book.woff") format("woff");
+	font-family: "Bebas";
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	src: url("../fonts/bebas-neue/BebasNeue-Bold.woff2") format("woff2"),
+		url("../fonts/bebas-neue/BebasNeue-Bold.woff") format("woff");
+	font-family: "Bebas";
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -25,15 +41,15 @@
 	--fz-regular: 18px;
 	--fz-title-section: 44px;
 
-	--ff-regular: "Montserrat", "Arial", "Helvetica", sans-serif;
+	--ff-regular: "Roboto", "Arial", "Helvetica", sans-serif;
+	--ff-title: "Bebas", "Arial", "Helvetica", sans-serif;
 
-	--bg-primary: linear-gradient(
-			274.24deg,
-			rgba(255, 255, 255, 0) -1.45%,
-			rgba(255, 255, 255, 0.28) 41.35%,
-			rgba(255, 255, 255, 0) 97.56%
-		),
-		linear-gradient(264.53deg, #9443fc 10.33%, #4358fc 95.95%);
+	--bg-primary: linear-gradient(263.81deg, #e7c363 10.32%, #e7c363 94.97%);
+	--bg-primary-hover: linear-gradient(
+		263.81deg,
+		#ffcd43 10.32%,
+		#f7c641 94.97%
+	);
 	--pi-decor: none;
 
 	--z-dropdown: 10;
@@ -229,15 +245,15 @@ body {
 	padding: 0 10px;
 }
 
-.main {
+.wrapper {
 	overflow-x: hidden;
 }
 
 @media (min-width: 1199.98px) {
 	.container {
-		max-width: 1170px;
-		padding-left: 15px;
-		padding-right: 15px;
+		max-width: 1180px;
+		// padding-left: 15px;
+		// padding-right: 15px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -251,6 +267,7 @@ body {
 
 @import "sections/header";
 @import "sections/hero";
+@import "sections/coach";
 @import "sections/about";
 @import "sections/compare";
 @import "sections/programm";

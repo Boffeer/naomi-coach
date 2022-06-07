@@ -1,24 +1,18 @@
-.section--minus-top {
-	margin-top: -410px;
-}
 .section__title {
 	margin-bottom: 16px;
-	font-family: var(--ff-regular);
+	font-family: var(--ff-title);
+	color: var(--c-text-title);
 	font-weight: 400;
-	font-size: 44px;
+	font-size: 61px;
 	line-height: 120%;
-	background: linear-gradient(
-			77.86deg,
-			rgba(255, 255, 255, 0.09) 11.6%,
-			rgba(255, 255, 255, 0.15) 34.08%,
-			rgba(255, 255, 255, 0.15) 68.26%,
-			rgba(255, 255, 255, 0) 92.01%
-		),
-		#323232;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	// text-fill-color: transparent;
+}
+.section__text--highlight {
+	border-radius: 60px;
+	display: inline-block;
+	padding-left: 27px;
+	padding-right: 27px;
+	background: var(--bg-primary);
+	font-weight: 700;
 }
 
 .section__title--center {
@@ -27,11 +21,12 @@
 
 .section__text {
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 145%;
-	letter-spacing: 0.05em;
 	color: #303034;
 	margin-bottom: 30px;
+
+	font-size: 18px;
+	line-height: 127%;
+	letter-spacing: 0.03em;
 }
 
 .socials__link:hover svg path {
@@ -51,12 +46,6 @@
 	}
 }
 
-@media (max-width: 991px) {
-	.section--minus-top {
-		margin-top: -490px;
-	}
-}
-
 @media (max-width: 767px) {
 	.section__title {
 		font-size: 25px;
@@ -67,9 +56,6 @@
 }
 
 @media (max-width: 575px) {
-	.section--minus-top {
-		margin-top: -300px;
-	}
 	.section__text {
 		font-size: 15px;
 	}

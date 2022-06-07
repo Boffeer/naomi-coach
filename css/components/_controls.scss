@@ -1,32 +1,46 @@
 .button {
+	position: relative;
 	display: inline-block;
-	border-radius: 10px;
+	border-radius: 20px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 22px;
 	text-align: center;
 	letter-spacing: 0.125em;
 	text-transform: uppercase;
-	@include getmask(url("../img/common/button.svg"));
 }
 .button--primary {
 	padding: 40px 33px;
 	color: var(--c-text-on);
-	background: var(--bg-primary);
-	box-shadow: inset 7px 8px 8px rgba(255, 255, 255, 0.09),
-		inset -5px -2px 8px rgba(255, 255, 255, 0.12);
 	transition: all 0.3s ease-in-out;
 	max-width: 400px;
 	width: 100%;
 }
-.button--primary:hover {
-	background: linear-gradient(
-			274.24deg,
-			rgba(255, 255, 255, 0) -1.45%,
-			rgba(255, 255, 255, 0.28) 41.35%,
-			rgba(255, 255, 255, 0) 97.56%
-		),
-		linear-gradient(264.53deg, #4358fc 0%, #4358fc 100%), #121212;
+.button--primary::after,
+.button--primary::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: calc(100%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include getmask(url("../img/common/button.svg"));
+}
+.button--primary::before {
+	z-index: -1;
+	background: var(--bg-primary);
+}
+.button--primary::after {
+	z-index: -2;
+	top: 10px;
+	background: #cda436;
+	box-shadow: inset 7px 8px 8px rgba(255, 255, 255, 0.09),
+		inset -5px -2px 8px rgba(255, 255, 255, 0.12);
+}
+
+.button--primary:hover::before {
+	background: var(--bg-primary-hover);
 }
 
 .button--secondary {
