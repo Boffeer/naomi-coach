@@ -15,6 +15,7 @@
 	font-weight: 700;
 }
 
+.section__text--center,
 .section__title--center {
 	text-align: center;
 }
@@ -27,6 +28,9 @@
 	font-size: 18px;
 	line-height: 127%;
 	letter-spacing: 0.03em;
+}
+.section__text--bold {
+	font-weight: 700;
 }
 
 .socials__link:hover svg path {

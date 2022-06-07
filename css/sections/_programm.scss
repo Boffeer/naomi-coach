@@ -1,19 +1,42 @@
 .programm {
-	margin-top: -180px;
+	padding-bottom: 330px;
 	z-index: 4;
 	position: relative;
+	background-image: url(../img/programm/bg.jpg);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
 }
 .programm__container {
 	padding-left: 0;
 	padding-right: 0;
 }
 .programm__title {
-	margin-bottom: 50px;
+	margin-bottom: 10px;
+}
+.programm__subtitle {
+	margin-bottom: 30px;
+	font-size: 18px;
+	line-height: 127%;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+.programm__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	counter-reset: programm;
+	transition: all 0.3s ease-in-out;
+}
+.programm__gallery {
+	transition: all 0.3s ease-in-out;
+	margin-bottom: 130px;
 }
 
 .programm-card__wrap {
 	position: relative;
 	transition: all 0.3s ease-in-out;
+	counter-increment: programm;
 }
 .programm-card__wrap:before {
 	transition: all 0.3s ease-in-out;
@@ -42,17 +65,26 @@
 }
 
 .programm-card__top {
-	padding: 38px 70px;
+	padding: 18px 31px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 .programm-card__title {
 	font-weight: 400;
-	font-size: 25px;
+	font-size: 18px;
 	line-height: 120%;
 	color: #323c4b;
 	max-width: calc(100% - 60px);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.programm-card__title::before {
+	content: counter(programm) ".";
+	display: block;
+	margin-right: 5px;
 }
 .programm-card__closer {
 	position: relative;
@@ -94,7 +126,7 @@
 }
 
 .programm-card__bottom {
-	padding: 40px 70px 50px;
+	padding: 21px 31px 36px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -175,6 +207,26 @@
 }
 .bayan--opened .programm-card__bottom {
 	border-top: 1px solid #efefef;
+}
+
+.programm__pic {
+	display: block;
+	margin-left: -150px;
+	margin-right: -230px;
+	margin-top: auto;
+	pointer-events: var(--pi-decor);
+}
+
+.programm__divider-bottom {
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	height: 900px;
+	width: 100%;
+	background-image: url(../img/programm/table.png);
+	pointer-events: var(--pi-decor);
 }
 
 @media (max-width: 1199px) {
