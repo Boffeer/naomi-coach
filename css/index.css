@@ -1422,9 +1422,6 @@ body {
   padding-bottom: 330px;
   z-index: 1;
   position: relative;
-  background-image: url("../img/programm/bg.jpg");
-  background-image: image-set(url("../img/programm/bg.webp") 1x);
-  background-image: -webkit-image-set(url("../img/programm/bg.webp") 1x);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -1759,7 +1756,6 @@ body {
   z-index: 2;
   height: 900px;
   width: 100%;
-  background-image: url(../img/programm/table.png);
   pointer-events: var(--pi-decor);
 }
 
@@ -1855,9 +1851,6 @@ body {
   z-index: 2;
   padding-top: 275px;
   background-color: #341d45;
-  background-image: url("../img/consult/bg.jpg");
-  background-image: image-set(url("../img/consult/bg.webp") 1x);
-  background-image: -webkit-image-set(url("../img/consult/bg.webp") 1x);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2290,7 +2283,6 @@ body {
   bottom: -10px;
   width: 100%;
   height: 580px;
-  background-image: url("../img/consult/divider-bottom.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -2307,9 +2299,6 @@ body {
   background-color: #3d1e4a;
   position: relative;
   padding-bottom: 300px;
-  background-image: url("../img/why/full-bg.jpg");
-  background-image: image-set(url("../img/why/full-bg.webp") 1x);
-  background-image: -webkit-image-set(url("../img/why/full-bg.webp") 1x);
   background-size: cover;
   background-position: center 0px;
   z-index: 2;
@@ -2535,9 +2524,6 @@ body {
   bottom: -290px;
   width: 100%;
   height: 800px;
-  background-image: url("../img/why/divider-bottom.png");
-  background-image: image-set(url("../img/why/divider-bottom.webp") 1x);
-  background-image: -webkit-image-set(url("../img/why/divider-bottom.webp") 1x);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2562,9 +2548,6 @@ body {
   padding-bottom: 240px;
   position: relative;
   z-index: 1;
-  background-image: url("../img/meet/bg.jpg");
-  background-image: image-set(url("../img/meet/bg.webp") 1x);
-  background-image: -webkit-image-set(url("../img/meet/bg.webp") 1x);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2712,9 +2695,6 @@ body {
   left: 0;
   width: 100%;
   height: 800px;
-  background-image: url("../img/meet/divider-bottom.png");
-  background-image: image-set(url("../img/meet/divider-bottom.webp") 1x);
-  background-image: -webkit-image-set(url("../img/meet/divider-bottom.webp") 1x);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -2865,9 +2845,6 @@ body {
 
 .pricing {
   position: relative;
-  background-image: url("../img/pricing/bg.jpg");
-  background-image: image-set(url("../img/pricing/bg.webp") 1x);
-  background-image: -webkit-image-set(url("../img/pricing/bg.webp") 1x);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -3184,9 +3161,6 @@ body {
   width: 100%;
   height: 80%;
   mix-blend-mode: color-dodge;
-  background-image: url("../img/pricing/moon.png");
-  background-image: image-set(url("../img/pricing/moon.webp") 1x);
-  background-image: -webkit-image-set(url("../img/pricing/moon.webp") 1x);
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
@@ -3212,9 +3186,6 @@ body {
   display: block;
   width: 270px;
   height: 350px;
-  background-image: url("../img/pricing/moon.png");
-  background-image: image-set(url("../img/pricing/moon.webp") 1x);
-  background-image: -webkit-image-set(url("../img/pricing/moon.webp") 1x);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -3248,9 +3219,6 @@ body {
   left: 0;
   width: 100%;
   height: 1100px;
-  background-image: url("../img/pricing/divider-bottom.png");
-  background-image: image-set(url("../img/pricing/divider-bottom.webp") 1x);
-  background-image: -webkit-image-set(url("../img/pricing/divider-bottom.webp") 1x);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -3456,7 +3424,6 @@ body {
   display: block;
   width: 100%;
   height: 268px;
-  background-image: url(../img/warranty/divider-bottom.png);
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3537,9 +3504,6 @@ body {
   padding-top: 100px;
   position: relative;
   background-color: #341d45;
-  background-image: url("../img/lifechange/bg.png");
-  background-image: image-set(url("../img/lifechange/bg.webp") 1x);
-  background-image: -webkit-image-set(url("../img/lifechange/bg.webp") 1x);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3633,9 +3597,6 @@ body {
   height: 130%;
   max-width: 1000px;
   width: 100%;
-  background-image: url("../img/lifechange/light-left.png");
-  background-image: image-set(url("../img/lifechange/light-left.webp") 1x);
-  background-image: -webkit-image-set(url("../img/lifechange/light-left.webp") 1x);
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -3656,9 +3617,6 @@ body {
   max-width: 1300px;
   width: 100%;
   mix-blend-mode: soft-light;
-  background-image: url("../img/lifechange/moon.png");
-  background-image: image-set(url("../img/lifechange/moon.webp") 1x);
-  background-image: -webkit-image-set(url("../img/lifechange/moon.webp") 1x);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;

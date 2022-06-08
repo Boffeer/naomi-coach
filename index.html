@@ -237,7 +237,7 @@
 				</div>
 			</section>
 
-			<section class="programm">
+			<section class="programm lazy" data-bg="./img/programm/bg.jpg">
 				<div id="programm"></div>
 				<div class="container programm__container">
 					<h2 class="section__title section__title--center programm__title">
@@ -380,10 +380,13 @@
 						/></picture>
 					</div>
 				</div>
-				<div class="programm__divider-bottom"></div>
+				<div
+					class="programm__divider-bottom lazy"
+					data-bg="./img/programm/table.png"
+				></div>
 			</section>
 
-			<section class="consult">
+			<section class="consult lazy" data-bg="./img/consult/bg.jpg">
 				<div class="container consult__container">
 					<h2 class="section__title section__title--center consult__title">
 						En conséquence, tu&nbsp;arriveras à:
@@ -392,13 +395,13 @@
 						<article class="consult-bullet">
 							<picture class="consult-bullet__pic">
 								<source
-									srcset="./img/consult/bullet-1.webp"
+									data-srcset="./img/consult/bullet-1.webp"
 									type="image/webp"
 								/>
 								<img
-									src="./img/consult/bullet-1.png"
+									data-src="./img/consult/bullet-1.png"
 									alt="En conséquence, tu arriveras à:"
-									class="consult-bullet__img"
+									class="consult-bullet__img lazy"
 								/>
 							</picture>
 							<p class="consult-bullet__desc">
@@ -409,13 +412,13 @@
 						<article class="consult-bullet">
 							<picture class="consult-bullet__pic">
 								<source
-									srcset="./img/consult/bullet-2.webp"
+									data-srcset="./img/consult/bullet-2.webp"
 									type="image/webp"
 								/>
 								<img
-									src="./img/consult/bullet-2.png"
+									data-src="./img/consult/bullet-2.png"
 									alt="En conséquence, tu arriveras à:"
-									class="consult-bullet__img"
+									class="consult-bullet__img lazy"
 								/>
 							</picture>
 							<p class="consult-bullet__desc">
@@ -426,13 +429,13 @@
 						<article class="consult-bullet">
 							<picture class="consult-bullet__pic">
 								<source
-									srcset="./img/consult/bullet-3.webp"
+									data-srcset="./img/consult/bullet-3.webp"
 									type="image/webp"
 								/>
 								<img
-									src="./img/consult/bullet-3.png"
+									data-src="./img/consult/bullet-3.png"
 									alt="En conséquence, tu arriveras à"
-									class="consult-bullet__img"
+									class="consult-bullet__img lazy"
 								/>
 							</picture>
 							<p class="consult-bullet__desc">
@@ -443,13 +446,13 @@
 						<article class="consult-bullet">
 							<picture class="consult-bullet__pic">
 								<source
-									srcset="./img/consult/bullet-4.webp"
+									data-srcset="./img/consult/bullet-4.webp"
 									type="image/webp"
 								/>
 								<img
-									src="./img/consult/bullet-4.png"
+									data-src="./img/consult/bullet-4.png"
 									alt="En conséquence, tu arriveras à"
-									class="consult-bullet__img"
+									class="consult-bullet__img lazy"
 								/>
 							</picture>
 							<p class="consult-bullet__desc">
@@ -459,13 +462,13 @@
 						<article class="consult-bullet">
 							<picture class="consult-bullet__pic">
 								<source
-									srcset="./img/consult/bullet-5.webp"
+									data-srcset="./img/consult/bullet-5.webp"
 									type="image/webp"
 								/>
 								<img
-									src="./img/consult/bullet-5.png"
+									data-src="./img/consult/bullet-5.png"
 									alt="En conséquence, tu arriveras à"
-									class="consult-bullet__img"
+									class="consult-bullet__img lazy"
 								/>
 							</picture>
 							<p class="consult-bullet__desc">
@@ -476,13 +479,13 @@
 						<article class="consult-bullet">
 							<picture class="consult-bullet__pic">
 								<source
-									srcset="./img/consult/bullet-6.webp"
+									data-srcset="./img/consult/bullet-6.webp"
 									type="image/webp"
 								/>
 								<img
-									src="./img/consult/bullet-6.png"
+									data-src="./img/consult/bullet-6.png"
 									alt="En conséquence, tu arriveras à"
-									class="consult-bullet__img"
+									class="consult-bullet__img lazy"
 								/>
 							</picture>
 							<p class="consult-bullet__desc">
@@ -493,13 +496,13 @@
 						<article class="consult-bullet">
 							<picture class="consult-bullet__pic">
 								<source
-									srcset="./img/consult/bullet-7.webp"
+									data-srcset="./img/consult/bullet-7.webp"
 									type="image/webp"
 								/>
 								<img
-									src="./img/consult/bullet-7.png"
+									data-src="./img/consult/bullet-7.png"
 									alt="En conséquence, tu arriveras à"
-									class="consult-bullet__img"
+									class="consult-bullet__img lazy"
 								/>
 							</picture>
 							<p class="consult-bullet__desc">Te montrer et oser briller</p>
@@ -507,26 +510,28 @@
 					</div>
 					<picture class="consult__pic">
 						<source
-							srcset="./img/consult/hero.webp"
+							data-srcset="./img/consult/hero.webp"
 							media="(min-width: 576px)"
 							type="image/webp" />
-						<source srcset="./img/consult/hero-mobile.webp" type="image/webp" />
 						<source
-							srcset="./img/consult/hero.png"
+							data-srcset="./img/consult/hero-mobile.webp"
+							type="image/webp" />
+						<source
+							data-srcset="./img/consult/hero.png"
 							media="(min-width: 576px)" />
 						<img
-							src="./img/consult/hero-mobile.png"
+							data-src="./img/consult/hero-mobile.png"
 							alt="En conséquence, tu arriveras à"
-							class="consult__img"
+							class="consult__img lazy"
 					/></picture>
-					<div class="consult__divider"></div>
-					<!-- <a href="#pricing" class="button button--primary consult__anchor"
-							>Les tarifs</a
-						> -->
+					<div
+						class="consult__divider lazy"
+						data-bg="./img/consult/divider-bottom.png"
+					></div>
 				</div>
 			</section>
 
-			<section class="why">
+			<section class="why lazy" data-bg="./img/why/full-bg.jpg">
 				<div class="container why__container">
 					<h2 class="section__title section__text--center why__title">
 						Pourquoi les séances de coaching <br />
@@ -543,11 +548,13 @@
 								</p>
 							</div>
 							<picture class="why-card__pic">
-								<source srcset="./img/why/privacy.webp" type="image/webp" />
+								<source
+									data-srcset="./img/why/privacy.webp"
+									type="image/webp" />
 								<img
-									src="./img/why/privacy.png"
+									data-src="./img/why/privacy.png"
 									alt="Confidentialité garantie."
-									class="why-card__img"
+									class="why-card__img lazy"
 							/></picture>
 						</article>
 						<article class="why-card">
@@ -563,11 +570,13 @@
 								</p>
 							</div>
 							<picture class="why-card__pic">
-								<source srcset="./img/why/records.webp" type="image/webp" />
+								<source
+									data-srcset="./img/why/records.webp"
+									type="image/webp" />
 								<img
-									src="./img/why/records.png"
+									data-src="./img/why/records.png"
 									alt="Des enregistrements de nos séances en ligne et un rapport sur le travail effectué"
-									class="why-card__img"
+									class="why-card__img lazy"
 							/></picture>
 						</article>
 						<article class="why-card">
@@ -579,11 +588,11 @@
 								</p>
 							</div>
 							<picture class="why-card__pic">
-								<source srcset="./img/why/aid.webp" type="image/webp" />
+								<source data-srcset="./img/why/aid.webp" type="image/webp" />
 								<img
-									src="./img/why/aid.png"
+									data-src="./img/why/aid.png"
 									alt="Soutien et aide."
-									class="why-card__img"
+									class="why-card__img lazy"
 							/></picture>
 						</article>
 						<article class="why-card">
@@ -600,19 +609,19 @@
 							</div>
 							<picture class="why-card__pic">
 								<source
-									srcset="./img/why/formats.webp"
+									data-srcset="./img/why/formats.webp"
 									media="(min-width: 576px)"
 									type="image/webp" />
 								<source
-									srcset="./img/why/formats-mobile.webp"
+									data-srcset="./img/why/formats-mobile.webp"
 									type="image/webp" />
 								<source
-									srcset="./img/why/formats.png"
+									data-srcset="./img/why/formats.png"
 									media="(min-width: 576px)" />
 								<img
-									src="./img/why/formats-mobile.png"
+									data-src="./img/why/formats-mobile.png"
 									alt="L'opportunité d'assister à des sessions à la fois en ligne"
-									class="why-card__img"
+									class="why-card__img lazy"
 							/></picture>
 						</article>
 					</div>
@@ -622,10 +631,13 @@
 						>
 					</div>
 				</div>
-				<div class="why__divider-bottom"></div>
+				<div
+					class="why__divider-bottom lazy"
+					data-bg="./img/why/divider-bottom.png"
+				></div>
 			</section>
 
-			<section class="meet">
+			<section class="meet lazy" data-bg="./img/meet/bg.jpg">
 				<div class="container meet__container">
 					<div class="meet__info">
 						<h2 class="meet__title section__title">
@@ -653,13 +665,16 @@
 						</ul>
 					</div>
 					<picture class="meet__pic">
-						<source srcset="./img/meet/hero.webp" type="image/webp" />
+						<source data-srcset="./img/meet/hero.webp" type="image/webp" />
 						<img
-							src="./img/meet/hero.png"
+							data-src="./img/meet/hero.png"
 							alt="Et il est temps de faire connaissance"
-							class="meet__img"
+							class="meet__img lazy"
 					/></picture>
-					<div class="meet__divider-bottom"></div>
+					<div
+						class="meet__divider-bottom lazy"
+						data-bg="./img/meet/divider-bottom.png"
+					></div>
 				</div>
 			</section>
 
@@ -672,36 +687,38 @@
 						<div class="reviews-slider__track splide__track">
 							<ul class="splide__list">
 								<li class="splide__slide reviews-slider__slide">
-									<source srcset="./img/clients/video.webp" type="image/webp" />
 									<picture class="reviews-slider__pic">
+										<source
+											data-srcset="./img/clients/video.webp"
+											type="image/webp" />
 										<img
-											src="./img/clients/video.jpg"
+											data-src="./img/clients/video.jpg"
 											alt=""
-											class="reviews-slider__img"
+											class="reviews-slider__img lazy"
 									/></picture>
 									<button class="reviews-slider__button"></button>
 								</li>
 								<li class="splide__slide reviews-slider__slide">
 									<picture class="reviews-slider__pic">
 										<source
-											srcset="./img/clients/video.webp"
+											data-srcset="./img/clients/video.webp"
 											type="image/webp" />
 										<img
-											src="./img/clients/video.jpg"
+											data-src="./img/clients/video.jpg"
 											alt=""
-											class="reviews-slider__img"
+											class="reviews-slider__img lazy"
 									/></picture>
 									<button class="reviews-slider__button"></button>
 								</li>
 								<li class="splide__slide reviews-slider__slide">
 									<picture class="reviews-slider__pic">
 										<source
-											srcset="./img/clients/video.webp"
+											data-srcset="./img/clients/video.webp"
 											type="image/webp" />
 										<img
-											src="./img/clients/video.jpg"
+											data-src="./img/clients/video.jpg"
 											alt=""
-											class="reviews-slider__img"
+											class="reviews-slider__img lazy"
 									/></picture>
 									<button class="reviews-slider__button"></button>
 								</li>
@@ -715,9 +732,15 @@
 			</section>
 
 			<div id="pricing"></div>
-			<section class="pricing">
-				<div class="pricing-decor__left"></div>
-				<div class="pricing-decor__right"></div>
+			<section class="pricing lazy" data-bg="./img/pricing/bg.jpg">
+				<div
+					class="pricing-decor__left lazy"
+					data-bg="./img/pricing/moon.png"
+				></div>
+				<div
+					class="pricing-decor__right lazy"
+					data-bg="./img/pricing/feather.png"
+				></div>
 				<div class="container pricing__container">
 					<h2 class="section__title section__title--center pricing__title">
 						Les tarifs
@@ -903,7 +926,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="pricing__divider-bottom"></div>
+				<div
+					class="pricing__divider-bottom lazy"
+					data-bg="./img/pricing/divider-bottom.png"
+				></div>
 			</section>
 
 			<section class="warranty">
@@ -916,13 +942,13 @@
 						<article class="warranty-card">
 							<picture class="warranty-card__pic">
 								<source
-									srcset="./img/warranty/contract.webp"
+									data-srcset="./img/warranty/contract.webp"
 									type="image/webp"
 								/>
 								<img
-									src="./img/warranty/contract.png"
+									data-src="./img/warranty/contract.png"
 									alt=""
-									class="warranty-card__img"
+									class="warranty-card__img lazy"
 								/>
 							</picture>
 							<p class="warranty-card__desc">
@@ -933,13 +959,13 @@
 						<article class="warranty-card">
 							<picture class="warranty-card__pic">
 								<source
-									srcset="./img/warranty/payment.webp"
+									data-srcset="./img/warranty/payment.webp"
 									type="image/webp"
 								/>
 								<img
-									src="./img/warranty/payment.png"
+									data-src="./img/warranty/payment.png"
 									alt=""
-									class="warranty-card__img"
+									class="warranty-card__img lazy"
 								/>
 							</picture>
 							<p class="warranty-card__desc">
@@ -949,11 +975,14 @@
 						</article>
 						<article class="warranty-card">
 							<picture class="warranty-card__pic">
-								<source srcset="./img/warranty/refund.webp" type="image/webp" />
+								<source
+									data-srcset="./img/warranty/refund.webp"
+									type="image/webp"
+								/>
 								<img
-									src="./img/warranty/refund.png"
+									data-src="./img/warranty/refund.png"
 									alt=""
-									class="warranty-card__img"
+									class="warranty-card__img lazy"
 								/>
 							</picture>
 							<p class="warranty-card__desc">
@@ -963,19 +992,30 @@
 						</article>
 					</div>
 				</div>
-				<div class="warranty__divider-bottom"></div>
+				<div
+					class="warranty__divider-bottom lazy"
+					data-bg="./img/warranty/divider-bottom.png"
+				></div>
 			</section>
 
-			<section class="lifechange">
-				<div class="lifechange__decor-left"></div>
-				<div class="lifechange__decor-right"></div>
+			<section class="lifechange lazy" data-bg="./img/lifechange/bg.png">
+				<div
+					class="lifechange__decor-left lazy"
+					data-bg="./img/lifechange/light-left.png"
+				></div>
+				<div
+					class="lifechange__decor-right lazy"
+					data-bg="./img/lifechange/moon.png"
+				></div>
 				<div class="container lifechange__container">
 					<picture class="lifechange__pic">
-						<source srcset="./img/lifechange/hero.webp" type="image/webp" />
+						<source
+							data-srcset="./img/lifechange/hero.webp"
+							type="image/webp" />
 						<img
-							src="./img/lifechange/hero.png"
+							data-src="./img/lifechange/hero.png"
 							alt="P.S. Arrête d'attendre un lendemain parfait pour changer ta vie pour le mieux. Aujourd'hui c’est parfait, ici et maintenant!"
-							class="lifechange__img"
+							class="lifechange__img lazy"
 					/></picture>
 					<div class="lifechange__info">
 						<h2 class="section__title lifechange__title">
@@ -1126,6 +1166,7 @@
 			</div>
 		</div>
 
+		<script src="./js/lazyload.min.js"></script>
 		<script src="./js/splide.min.js"></script>
 		<!-- <script src="./js/imask.js"></script> -->
 		<script src="./assets/poppa/poppa.js"></script>

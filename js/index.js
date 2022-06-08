@@ -1,3 +1,4 @@
+var lazyLoadInstance = new LazyLoad();
 //#region lib
 function copyToClipboard(element) {
   var clipboardStorage = document.createElement("input");

@@ -4,7 +4,7 @@
 	padding-top: 275px;
 	background-color: #341d45;
 	// background-image: url("../img/consult/bg.jpg");
-	@include bgset("../img/consult/bg", "jpg");
+	// @include bgset("../img/consult/bg", "jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -307,7 +307,7 @@
 	width: 100%;
 	height: 580px;
 	// @include bgset("../img/consult/divider-bottom", "png");
-	background-image: url("../img/consult/divider-bottom.png");
+	// background-image: url("../img/consult/divider-bottom.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;

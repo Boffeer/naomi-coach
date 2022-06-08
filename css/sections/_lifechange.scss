@@ -3,7 +3,7 @@
 	position: relative;
 	background-color: #341d45;
 	// background-image: url(../img/lifechange/bg.png);
-	@include bgset("../img/lifechange/bg", "png");
+	// @include bgset("../img/lifechange/bg", "png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -76,7 +76,7 @@
 	max-width: 1000px;
 	width: 100%;
 	// background-image: url(../img/lifechange/light-left.png);
-	@include bgset("../img/lifechange/light-left", "png");
+	// @include bgset("../img/lifechange/light-left", "png");
 	background-size: contain;
 	background-position: left;
 	background-repeat: no-repeat;
@@ -96,7 +96,7 @@
 	width: 100%;
 	mix-blend-mode: soft-light;
 	// background-image: url(../img/lifechange/moon.png);
-	@include bgset("../img/lifechange/moon", "png");
+	// @include bgset("../img/lifechange/moon", "png");
 	background-size: contain;
 	background-position: right;
 	background-repeat: no-repeat;
