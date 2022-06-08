@@ -14,7 +14,7 @@
 	justify-content: space-between;
 	align-items: flex-start;
 
-	@media (max-width: 768px) {
+	@media (max-width: 991px) {
 		flex-direction: column-reverse;
 		justify-content: center;
 		align-items: center;
@@ -46,7 +46,7 @@
 	margin-left: -190px;
 	max-width: 792px;
 
-	@media (max-width: 768px) {
+	@media (max-width: 991px) {
 		margin-top: unset;
 		margin-left: auto;
 		margin-right: auto;
@@ -61,7 +61,7 @@
 }
 
 .lifechange__button {
-	@media (max-width: 768px) {
+	@media (max-width: 991px) {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;

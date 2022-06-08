@@ -189,6 +189,9 @@
 		bottom: -280px;
 		height: 900px;
 	}
+	@media (max-width: 991px) {
+		height: 730px;
+	}
 	@media (max-width: 576px) {
 		height: 500px;
 		bottom: -200px;

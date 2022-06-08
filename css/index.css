@@ -1087,9 +1087,9 @@ body {
   right: 0;
   bottom: -10px;
   height: 350px;
-  background-image: url("../img/hero/divider-bottom.png");
-  background-image: image-set(url("../img/hero/divider-bottom.webp") 1x);
-  background-image: -webkit-image-set(url("../img/hero/divider-bottom.webp") 1x);
+  background-image: url("../img/coach/divider-bottom.png");
+  background-image: image-set(url("../img/coach/divider-bottom.webp") 1x);
+  background-image: -webkit-image-set(url("../img/coach/divider-bottom.webp") 1x);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -2535,6 +2535,12 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+  .why__divider-bottom {
+    height: 730px;
+  }
+}
+
 @media (max-width: 576px) {
   .why__divider-bottom {
     height: 500px;
@@ -3521,7 +3527,7 @@ body {
           align-items: flex-start;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .lifechange__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -3567,7 +3573,7 @@ body {
   max-width: 792px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .lifechange__pic {
     margin-top: unset;
     margin-left: auto;
@@ -3582,7 +3588,7 @@ body {
   height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .lifechange__button {
     display: block;
     margin-left: auto;
