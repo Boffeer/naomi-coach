@@ -4,8 +4,8 @@
 	padding-top: 165px;
 	padding-bottom: 230px;
 	margin-bottom: -10px;
-	background-image: url(../img/hero/hero-bg.jpg);
-	// @include bgset("../img/hero/bg", "jpg");
+	// background-image: url(../img/hero/hero-bg.jpg);
+	@include bgset("../img/hero/hero-bg", "jpg");
 	background-color: #341d45;
 	background-size: cover;
 	background-position: center;
@@ -16,6 +16,9 @@
 	}
 	@media (max-width: 685px) {
 		padding-bottom: 0;
+	}
+	@media (max-width: 575px) {
+		padding-top: 60px;
 	}
 }
 .hero__container {
@@ -127,7 +130,8 @@
 	margin-right: auto;
 	max-width: 807px;
 	height: 400px;
-	background-image: url(../img/hero/light.png);
+	// background-image: url(../img/hero/light.png);
+	@include bgset("../img/hero/light", "webp");
 	background-size: contain;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -141,8 +145,8 @@
 	right: 0;
 	bottom: 0;
 	height: 350px;
-	background-image: url(../img/hero/divider-bottom.png);
-	// @include bgset("../img/hero/divider-bottom", "png");
+	// background-image: url(../img/hero/divider-bottom.png);
+	@include bgset("../img/hero/divider-bottom", "png");
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -168,6 +172,6 @@
 	}
 	@media (max-width: 360px) {
 		height: 240px;
-		top: -100px;
+		bottom: -100px;
 	}
 }

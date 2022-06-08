@@ -4,7 +4,8 @@
 	padding-bottom: 250px;
 	margin-bottom: -10px;
 	background-color: #341d45;
-	background-image: url("../img/coach/bg.png");
+	// background-image: url("../img/coach/bg.png");
+	@include bgset("../img/coach/bg", "png");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -21,8 +22,8 @@
 	right: 0;
 	top: 0;
 	height: 350px;
-	background-image: url(../img/hero/divider-bottom.png);
-	// @include bgset("../img/hero/divider-bottom", "png");
+	// background-image: url(../img/hero/divider-bottom.png);
+	@include bgset("../img/hero/divider-bottom", "png");
 	background-size: cover;
 	background-position: bottom;
 	background-repeat: no-repeat;
@@ -134,8 +135,8 @@
 	right: 0;
 	bottom: -10px;
 	height: 350px;
-	background-image: url(../img/coach/divider-bottom.png);
-	// @include bgset("../img/hero/divider-bottom", "png");
+	// background-image: url(../img/coach/divider-bottom.png);
+	@include bgset("../img/hero/divider-bottom", "png");
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;

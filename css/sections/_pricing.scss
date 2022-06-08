@@ -1,7 +1,7 @@
 .pricing {
 	position: relative;
-	background-image: url("../img/pricing/bg.jpg");
-	// @include bgset("../img/pricing/bg");
+	// background-image: url("../img/pricing/bg.jpg");
+	@include bgset("../img/pricing/bg", "jpg");
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -281,7 +281,8 @@
 	width: 100%;
 	height: 80%;
 	mix-blend-mode: color-dodge;
-	background-image: url("../img/pricing/moon.png");
+	// background-image: url("../img/pricing/moon.png");
+	@include bgset("../img/pricing/moon", "png");
 	background-size: contain;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -302,7 +303,8 @@
 	display: block;
 	width: 270px;
 	height: 350px;
-	background-image: url("../img/pricing/feather.png");
+	// background-image: url("../img/pricing/feather.png");
+	@include bgset("../img/pricing/moon", "png");
 	background-size: contain;
 	background-position: right;
 	background-repeat: no-repeat;
@@ -343,7 +345,8 @@
 	left: 0;
 	width: 100%;
 	height: 1100px;
-	background-image: url(../img/pricing/divider-bottom.png);
+	// background-image: url(../img/pricing/divider-bottom.png);
+	@include bgset("../img/pricing/divider-bottom", "png");
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;

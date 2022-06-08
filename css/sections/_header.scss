@@ -11,6 +11,10 @@
 	justify-content: flex-end;
 	align-items: start;
 	padding-top: 30px;
+
+	@media (max-width: 575px) {
+		padding-top: 12px;
+	}
 }
 .header-branding {
 	display: inline-block;
@@ -59,7 +63,21 @@
 }
 .header__socials .socials__link {
 	width: 40px;
+	height: 40px;
+	border-radius: 40px;
 	margin-left: 18px;
+
+	@media (max-width: 575px) {
+		width: 26px;
+		height: 26px;
+	}
+	svg {
+		background-color: #fff;
+		border-radius: 100%;
+	}
+	path {
+		fill: var(--c-primary);
+	}
 }
 .header__socials .socials__link:first-of-type {
 	margin-left: 0;
