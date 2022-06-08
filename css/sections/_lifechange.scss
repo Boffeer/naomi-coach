@@ -49,6 +49,7 @@
 	background-size: contain;
 	background-position: left;
 	background-repeat: no-repeat;
+	pointer-events: var(--pi-decor);
 }
 
 .lifechange__decor-right {
@@ -63,4 +64,5 @@
 	background-size: contain;
 	background-position: right;
 	background-repeat: no-repeat;
+	pointer-events: var(--pi-decor);
 }

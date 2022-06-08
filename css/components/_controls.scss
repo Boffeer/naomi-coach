@@ -10,10 +10,10 @@
 	text-transform: uppercase;
 }
 .button--primary {
-	padding: 40px 33px;
+	padding: 30px 33px 36px;
 	color: var(--c-text-on);
 	transition: all 0.3s ease-in-out;
-	max-width: 400px;
+	max-width: 370px;
 	width: 100%;
 }
 .button--primary::after,
@@ -25,7 +25,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	@include getmask(url("../img/common/button.svg"));
+	@include getmask(url("../img/common/button-2.svg"));
 }
 .button--primary::before {
 	z-index: -1;

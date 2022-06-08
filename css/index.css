@@ -293,6 +293,11 @@ body {
   font-weight: 700;
 }
 
+.socials__link svg {
+  width: 100%;
+  height: 100%;
+}
+
 .socials__link:hover svg path {
   fill: var(--c-primary);
 }
@@ -338,11 +343,11 @@ body {
 }
 
 .button--primary {
-  padding: 40px 33px;
+  padding: 30px 33px 36px;
   color: var(--c-text-on);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  max-width: 400px;
+  max-width: 370px;
   width: 100%;
 }
 
@@ -355,8 +360,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  mask: url("../img/common/button.svg");
-  -webkit-mask: url("../img/common/button.svg");
+  mask: url("../img/common/button-2.svg");
+  -webkit-mask: url("../img/common/button-2.svg");
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-position: center;
@@ -499,7 +504,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .header-branding {
@@ -549,6 +554,11 @@ body {
   background-repeat: no-repeat;
   margin-right: 12px;
   background-size: contain;
+}
+
+.header__socials .socials__link {
+  width: 40px;
+  margin-left: 18px;
 }
 
 @media (max-width: 767px) {
@@ -676,6 +686,22 @@ body {
   pointer-events: var(--pi-decor);
 }
 
+.hero__divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 807px;
+  height: 400px;
+  background-image: url(../img/hero/light.png);
+  background-size: contain;
+  background-position: top;
+  mix-blend-mode: screen;
+  pointer-events: var(--pi-decor);
+}
+
 @media (max-width: 1600px) {
   .hero__pic {
     margin-top: -90px;
@@ -779,7 +805,7 @@ body {
 
 .coach {
   position: relative;
-  padding-top: 90px;
+  padding-top: 110px;
   padding-bottom: 250px;
   margin-bottom: -10px;
   background-color: #341d45;
@@ -806,10 +832,10 @@ body {
 .coach__pic {
   position: absolute;
   z-index: 2;
-  left: 20px;
-  bottom: 0;
+  left: 60px;
+  bottom: 35px;
   display: block;
-  max-width: 1210px;
+  max-width: 1140px;
   width: 100%;
 }
 
@@ -832,10 +858,12 @@ body {
 
 .coach__title {
   color: #fff;
+  margin-bottom: 11px;
 }
 
 .coach__desc {
   color: #fff;
+  font-size: 17px;
 }
 
 .coach__divider-bottom {
@@ -1268,20 +1296,11 @@ body {
   width: 52px;
   height: 52px;
   border-radius: 100%;
-  background: #ffffff;
+  background: var(--bg-primary);
   -webkit-box-shadow: 0px 4px 14px rgba(197, 197, 197, 0.25);
           box-shadow: 0px 4px 14px rgba(197, 197, 197, 0.25);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.programm-card__closer:hover {
-  background: var(--bg-primary);
-}
-
-.programm-card__closer:hover::before,
-.programm-card__closer:hover::after {
-  background: #fff;
 }
 
 .programm-card__closer::before,
@@ -1289,9 +1308,9 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+  background: #fff;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: var(--bg-primary);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -1386,12 +1405,7 @@ body {
 }
 
 .bayan--opened .programm-card__closer {
-  background: var(--bg-primary);
-}
-
-.bayan--opened .programm-card__closer::before,
-.bayan--opened .programm-card__closer::after {
-  background: #fff;
+  background: #d4d4d4;
 }
 
 .bayan--opened .programm-card__closer::after {
@@ -1509,7 +1523,7 @@ body {
 }
 
 .consult__title {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   color: #fff;
 }
 
@@ -1560,8 +1574,8 @@ body {
   -ms-grid-column: 1;
   grid-area: b2;
   position: relative;
-  margin-top: -80px;
-  margin-bottom: 45px;
+  margin-top: -70px;
+  margin-bottom: 40px;
   margin-left: 100px;
 }
 
@@ -1579,6 +1593,7 @@ body {
   max-width: 320px;
   position: relative;
   margin-left: -10px;
+  margin-top: -5px;
 }
 
 .consult-bullet:nth-of-type(5) {
@@ -1586,6 +1601,7 @@ body {
   -ms-grid-column: 2;
   grid-area: b5;
   margin-right: 25px;
+  margin-top: 8px;
 }
 
 .consult-bullet:nth-of-type(5) .consult-bullet__pic {
@@ -1909,7 +1925,7 @@ body {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .why-card {
@@ -2318,7 +2334,7 @@ body {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  padding-top: 530px;
+  padding-top: 540px;
   padding-bottom: 265px;
   background-color: #108993;
 }
@@ -2510,42 +2526,29 @@ body {
   text-fill-color: transparent;
 }
 
-.pricing__divider-top {
+.pricing-decor__left {
   position: absolute;
-  top: -180px;
+  top: -50px;
   left: 0;
   display: block;
   width: 100%;
-  height: 580px;
-  background-image: url("../img/common/divider-grey.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  pointer-events: var(--pi-decor);
-}
-
-.pricing-decor__left {
-  position: absolute;
-  top: 30%;
-  left: 0;
-  display: block;
-  width: 220px;
-  height: 260px;
-  background-image: url("../img/pricing/decor-left.png");
+  height: 80%;
+  mix-blend-mode: color-dodge;
+  background-image: url("../img/pricing/moon.png");
   background-size: contain;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   pointer-events: var(--pi-decor);
 }
 
-.pricing-decor__top-right {
+.pricing-decor__right {
   position: absolute;
-  top: -90px;
+  top: 24%;
   right: 0;
   display: block;
   width: 270px;
   height: 350px;
-  background-image: url("../img/pricing/decor-top-right.png");
+  background-image: url("../img/pricing/feather.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -2907,6 +2910,7 @@ body {
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
+  pointer-events: var(--pi-decor);
 }
 
 .lifechange__decor-right {
@@ -2921,6 +2925,7 @@ body {
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
+  pointer-events: var(--pi-decor);
 }
 
 .footer {

@@ -13,7 +13,7 @@
 	margin-top: -440px;
 }
 .consult__title {
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 	color: #fff;
 }
 
@@ -45,8 +45,8 @@
 .consult-bullet:nth-of-type(2) {
 	grid-area: b2;
 	position: relative;
-	margin-top: -80px;
-	margin-bottom: 45px;
+	margin-top: -70px;
+	margin-bottom: 40px;
 	margin-left: 100px;
 }
 
@@ -60,11 +60,13 @@
 	max-width: 320px;
 	position: relative;
 	margin-left: -10px;
+	margin-top: -5px;
 }
 
 .consult-bullet:nth-of-type(5) {
 	grid-area: b5;
 	margin-right: 25px;
+	margin-top: 8px;
 }
 .consult-bullet:nth-of-type(5) .consult-bullet__pic {
 	// height: 130px;
@@ -140,6 +142,23 @@
 	background-position: bottom;
 	pointer-events: var(--pi-decor);
 }
+
+// .consult__decor-left {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 200px;
+// 	height: 700px;
+// 	background-image: url(../img/consult/light-left.png);
+// }
+// .consult__decor-right {
+// 	position: absolute;
+// 	top: 0;
+// 	right: 0;
+// 	width: 200px;
+// 	height: 700px;
+// 	background-image: url(../img/consult/light-right.png);
+// }
 
 @media (max-width: 1600px) {
 	.consult__divider {

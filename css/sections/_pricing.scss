@@ -5,7 +5,7 @@
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
-	padding-top: 530px;
+	padding-top: 540px;
 	padding-bottom: 265px;
 	background-color: #108993;
 }
@@ -190,42 +190,30 @@
 	background-clip: text;
 	text-fill-color: transparent;
 }
-.pricing__divider-top {
-	position: absolute;
-	top: -180px;
-	left: 0;
-	display: block;
-	width: 100%;
-	height: 580px;
-	background-image: url("../img/common/divider-grey.png");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	pointer-events: var(--pi-decor);
-}
 
 .pricing-decor__left {
 	position: absolute;
-	top: 30%;
+	top: -50px;
 	left: 0;
 	display: block;
-	width: 220px;
-	height: 260px;
-	background-image: url("../img/pricing/decor-left.png");
+	width: 100%;
+	height: 80%;
+	mix-blend-mode: color-dodge;
+	background-image: url("../img/pricing/moon.png");
 	background-size: contain;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	pointer-events: var(--pi-decor);
 }
 
-.pricing-decor__top-right {
+.pricing-decor__right {
 	position: absolute;
-	top: -90px;
+	top: 24%;
 	right: 0;
 	display: block;
 	width: 270px;
 	height: 350px;
-	background-image: url("../img/pricing/decor-top-right.png");
+	background-image: url("../img/pricing/feather.png");
 	background-size: contain;
 	background-position: right;
 	background-repeat: no-repeat;

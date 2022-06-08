@@ -10,7 +10,7 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: start;
-	padding-top: 50px;
+	padding-top: 30px;
 }
 .header-branding {
 	display: inline-block;
@@ -48,6 +48,11 @@
 	background-repeat: no-repeat;
 	margin-right: 12px;
 	background-size: contain;
+}
+
+.header__socials .socials__link {
+	width: 40px;
+	margin-left: 18px;
 }
 
 @media (max-width: 767px) {

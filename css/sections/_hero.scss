@@ -75,6 +75,21 @@
 	background-repeat: no-repeat;
 	pointer-events: var(--pi-decor);
 }
+.hero__divider-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 807px;
+	height: 400px;
+	background-image: url(../img/hero/light.png);
+	background-size: contain;
+	background-position: top;
+	mix-blend-mode: screen;
+	pointer-events: var(--pi-decor);
+}
 
 @media (max-width: 1600px) {
 	.hero__pic {

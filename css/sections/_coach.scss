@@ -1,6 +1,6 @@
 .coach {
 	position: relative;
-	padding-top: 90px;
+	padding-top: 110px;
 	padding-bottom: 250px;
 	margin-bottom: -10px;
 	background-color: #341d45;
@@ -27,10 +27,10 @@
 .coach__pic {
 	position: absolute;
 	z-index: 2;
-	left: 20px;
-	bottom: 0;
+	left: 60px;
+	bottom: 35px;
 	display: block;
-	max-width: 1210px;
+	max-width: 1140px;
 	width: 100%;
 }
 .coach__img {
@@ -50,9 +50,11 @@
 }
 .coach__title {
 	color: #fff;
+	margin-bottom: 11px;
 }
 .coach__desc {
 	color: #fff;
+	font-size: 17px;
 }
 
 .coach__divider-bottom {
