@@ -1,0 +1,114 @@
+.why {
+	background-color: #3d1e4a;
+	position: relative;
+	padding-bottom: 300px;
+	background-image: url("../img/why/full-bg.jpg");
+	background-size: cover;
+	background-position: center 0px;
+	z-index: 2;
+}
+.why__title {
+	color: #fff;
+	margin-bottom: 70px;
+}
+.why__gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+	margin-bottom: 50px;
+}
+.why-card {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	background: linear-gradient(
+		100.25deg,
+		rgba(255, 255, 255, 0.2) 2.38%,
+		rgba(255, 255, 255, 0) 46.88%,
+		rgba(255, 255, 255, 0.2) 100%
+	);
+	border-radius: 20px;
+}
+.why-card::before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	top: 1px;
+	left: 1px;
+	display: block;
+	width: calc(100% - 2px);
+	height: calc(100% - 2px);
+	background: radial-gradient(50% 50% at 50% 50%, #3c1d49 0%, #371944 100%);
+	border-radius: inherit;
+}
+
+.why-card__info {
+	position: relative;
+	z-index: 1;
+	padding-top: 42px;
+	padding-left: 43px;
+	padding-bottom: 42px;
+	max-width: 370px;
+	width: 100%;
+}
+.why-card__title {
+	color: #fff;
+	display: inline;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 145%;
+	letter-spacing: 0.05em;
+}
+.why-card__desc {
+	color: #fff;
+	display: inline;
+	font-size: 18px;
+	line-height: 145%;
+	letter-spacing: 0.05em;
+}
+.why-card__pic {
+	position: relative;
+	z-index: 1;
+	display: block;
+	height: 220px;
+	width: auto;
+}
+.why-card__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: bottom;
+}
+
+.why-card:nth-of-type(1) .why-card__pic {
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+.why-card:nth-of-type(2) .why-card__pic {
+	margin-top: -10px;
+	min-width: 220px;
+}
+.why-card:nth-of-type(3) .why-card__pic {
+	min-width: 320px;
+	margin-left: -40px;
+	margin-right: -40px;
+	height: 238px;
+}
+.why-card:nth-of-type(4) .why-card__pic {
+	margin-right: 18px;
+	min-width: 200px;
+	margin-top: -2px;
+}
+
+.why__divider-bottom {
+	position: absolute;
+	left: 0;
+	bottom: -290px;
+	width: 100%;
+	height: 800px;
+	background-image: url(../img/why/divider-bottom.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}

@@ -153,6 +153,7 @@ body {
 	font-family: var(--ff-regular);
 	font-size: var(--fz-base);
 	color: var(--c-text-regular);
+	overflow-x: hidden;
 }
 .form-privacy {
 	display: flex;
@@ -247,6 +248,16 @@ body {
 
 .wrapper {
 	overflow-x: hidden;
+	overflow-y: visible;
+	width: 100vw;
+}
+
+.container--buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 1;
 }
 
 @media (min-width: 1199.98px) {
@@ -272,8 +283,10 @@ body {
 @import "sections/compare";
 @import "sections/programm";
 @import "sections/consult";
+@import "sections/why";
 @import "sections/meet";
 @import "sections/reviews";
 @import "sections/pricing";
 @import "sections/warranty";
+@import "sections/lifechange";
 @import "sections/footer";

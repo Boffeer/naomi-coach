@@ -1,0 +1,66 @@
+.lifechange {
+	padding-top: 100px;
+	position: relative;
+	background-color: #341d45;
+	background-image: url(../img/lifechange/bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.lifechange__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.lifechange__info {
+	max-width: 570px;
+	position: relative;
+	z-index: 2;
+}
+.lifechange__title {
+	color: #fff;
+	line-height: 107%;
+}
+
+.lifechange__pic {
+	position: relative;
+	display: block;
+	margin-top: -220px;
+	margin-left: -190px;
+	max-width: 792px;
+}
+
+.lifechange__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.lifechange__decor-left {
+	position: absolute;
+	top: -210px;
+	left: 0;
+	height: 130%;
+	max-width: 1000px;
+	width: 100%;
+	background-image: url(../img/lifechange/light-left.png);
+	background-size: contain;
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+.lifechange__decor-right {
+	position: absolute;
+	top: -180px;
+	right: 0;
+	height: 150%;
+	max-width: 1300px;
+	width: 100%;
+	mix-blend-mode: soft-light;
+	background-image: url(../img/lifechange/moon.png);
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+}

@@ -61,14 +61,9 @@ let reviewsSlider = new Splide(".splide", {
   },
   type: "loop",
   snap: true,
-  perPage: 2,
+  perPage: 1,
   gap: "2rem",
   pagination: false,
-  breakpoints: {
-    767: {
-      perPage: 1,
-    },
-  },
 });
 
 reviewsSlider.mount();
