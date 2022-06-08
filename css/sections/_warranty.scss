@@ -2,6 +2,11 @@
 	position: relative;
 	padding-top: 80px;
 	margin-bottom: -10px;
+
+	@media (max-width: 1199px) {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 }
 
 .warranty::before {
@@ -20,10 +25,27 @@
 
 .warranty__container {
 	position: relative;
+
+	@media (max-width: 1199px) {
+		margin-top: -150px;
+	}
+	@media (max-width: 576px) {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
 }
 
 .warranty__title {
 	margin-bottom: 110px;
+
+	@media (max-width: 1199px) {
+		margin-bottom: 20px;
+	}
+	@media (max-width: 576px) {
+		br {
+			display: none;
+		}
+	}
 }
 
 .warranty__gallery {
@@ -33,10 +55,24 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 25px;
+
+	@media (max-width: 1199px) {
+		margin-bottom: -40px;
+	}
+
+	@media (max-width: 768px) {
+		display: block;
+	}
 }
 
 .warranty-card {
 	max-width: calc(50% - 30px);
+
+	@media (max-width: 768px) {
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .warranty-card__pic {
@@ -48,11 +84,19 @@
 .warranty-card:nth-of-type(2) .warranty-card__pic {
 	height: 270px;
 	margin-top: 10px;
+
+	@media (max-width: 768px) {
+		height: 200px;
+	}
 }
 .warranty-card:nth-of-type(3) .warranty-card__pic {
 	height: 350px;
 	margin-top: -130px;
 	margin-bottom: -10px;
+
+	@media (max-width: 768px) {
+		margin-top: -40px;
+	}
 }
 
 .warranty-card__img {
@@ -70,6 +114,12 @@
 	text-align: center;
 	letter-spacing: 0.05em;
 	color: #303034;
+
+	@media (max-width: 991px) {
+		br {
+			display: none;
+		}
+	}
 }
 
 .warranty__button-start {
@@ -85,26 +135,15 @@
 	background-position: center bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
+
+	@media (max-width: 576px) {
+		height: 100px;
+	}
 }
 
 @media (max-width: 1600px) {
 	.warranty::before {
 		top: -250px;
-	}
-}
-
-@media (max-width: 1199px) {
-	.warranty {
-		padding-bottom: 60px;
-	}
-	.warranty-card__pic {
-		margin-bottom: 5px;
-	}
-	.warranty__gallery {
-		margin-bottom: 60px;
-	}
-	.warranty__title {
-		margin-bottom: 20px;
 	}
 }
 
@@ -141,9 +180,6 @@
 	.warranty::before {
 		top: -100px;
 		height: 210px;
-	}
-	.warranty__gallery {
-		display: block;
 	}
 	.warranty-card {
 		max-width: 100%;

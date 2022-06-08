@@ -87,8 +87,7 @@ programmCard.click();
 
 poppa({
   pop: ".pop__callback",
-  clickTrigger: [".header__button-callback"],
-  // openedByDefault: true,
+  clickTrigger: [".pricing-card__button"],
 });
 
 // #region validators

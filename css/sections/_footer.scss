@@ -10,19 +10,6 @@
 	align-items: flex-start;
 }
 
-.socials {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.socials__link {
-	display: block;
-	margin-left: 10px;
-}
-.socials__link:first-child {
-	margin-bottom: 0;
-}
-
 @media (max-width: 991px) {
 	.footer__container {
 		flex-wrap: wrap;

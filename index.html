@@ -383,7 +383,7 @@
 			<section class="consult">
 				<div class="container consult__container">
 					<h2 class="section__title section__title--center consult__title">
-						En conséquence, tu arriveras à:
+						En conséquence, tu&nbsp;arriveras à:
 					</h2>
 					<div class="consult__bullets">
 						<article class="consult-bullet">
@@ -478,13 +478,16 @@
 							<p class="consult-bullet__desc">Te montrer et oser briller</p>
 						</article>
 					</div>
-					<picutre class="consult__pic">
-						<source srcset="./img/consult/hero.webp" type="image/webp" />
+					<picture class="consult__pic">
+						<source
+							srcset="./img/consult/hero.png"
+							media="(min-width: 576px)" />
+						<!-- <source srcset="./img/consult/hero-mobile.png" type="image/webp" /> -->
 						<img
-							src="./img/consult/hero.png"
+							src="./img/consult/hero-mobile.png"
 							alt="En conséquence, tu arriveras à"
 							class="consult__img"
-					/></picutre>
+					/></picture>
 					<div class="consult__divider"></div>
 					<!-- <a href="#pricing" class="button button--primary consult__anchor"
 							>Les tarifs</a
@@ -561,9 +564,12 @@
 									mon énergie.
 								</p>
 							</div>
-							<picture class="why-card__pic"
-								><img
-									src="./img/why/formats.png"
+							<picture class="why-card__pic">
+								<source
+									srcset="./img/why/formats.png"
+									media="(min-width: 576px)" />
+								<img
+									src="./img/why/formats-mobile.png"
 									alt="L'opportunité d'assister à des sessions à la fois en ligne"
 									class="why-card__img"
 							/></picture>
@@ -603,13 +609,13 @@
 							</li>
 						</ul>
 					</div>
-					<picutre class="meet__pic">
-						<source srcset="./img/meet/hero.webp" type="image/webp" />
+					<picture class="meet__pic">
+						<!-- <source srcset="./img/meet/hero.webp" type="image/webp" /> -->
 						<img
 							src="./img/meet/hero.png"
 							alt="Et il est temps de faire connaissance"
 							class="meet__img"
-					/></picutre>
+					/></picture>
 					<div class="meet__divider-bottom"></div>
 				</div>
 			</section>
@@ -701,7 +707,7 @@
 									<button
 										class="button button--primary pricing-card__button pricing-card__button--1"
 									>
-										Les tarifs
+										ACHETER
 									</button>
 									<p class="pricing-card__avalaible">
 										possibilité 3x ne correspond <br />
@@ -764,7 +770,7 @@
 									<button
 										class="button button--primary pricing-card__button pricing-card__button--2"
 									>
-										Les tarifs
+										ACHETER
 									</button>
 									<p class="pricing-card__avalaible">
 										(possibilité 3x) pour les perso <br />
@@ -839,7 +845,7 @@
 									<button
 										class="button button--primary pricing-card__button pricing-card__button--3"
 									>
-										Les tarifs
+										ACHETER
 									</button>
 									<p class="pricing-card__avalaible">(possibilité 3x)</p>
 								</div>
@@ -917,7 +923,9 @@
 							Arrête d'attendre un lendemain parfait pour changer ta vie pour le
 							mieux. Aujourd'hui c’est parfait, ici et maintenant!
 						</h2>
-						<a href="#pricingLes tarifs" class="button button--primary"
+						<a
+							href="#pricingLes tarifs"
+							class="button button--primary lifechange__button"
 							>Les tarifs</a
 						>
 					</div>

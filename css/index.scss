@@ -244,6 +244,19 @@ body {
 
 .container {
 	padding: 0 10px;
+	@media (min-width: 1199.98px) {
+		max-width: 1180px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@media (max-width: 991px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	@media (max-width: 576px) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 .wrapper {
@@ -258,16 +271,6 @@ body {
 	align-items: center;
 	position: relative;
 	z-index: 1;
-}
-
-@media (min-width: 1199.98px) {
-	.container {
-		max-width: 1180px;
-		// padding-left: 15px;
-		// padding-right: 15px;
-		margin-left: auto;
-		margin-right: auto;
-	}
 }
 
 @import "common";

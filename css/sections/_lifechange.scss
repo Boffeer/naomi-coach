@@ -12,12 +12,26 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+
+	@media (max-width: 768px) {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .lifechange__info {
 	max-width: 570px;
 	position: relative;
 	z-index: 2;
+
+	@media (max-width: 991px) {
+		margin-top: -70px;
+	}
+
+	@media (max-width: 768px) {
+		max-width: 100%;
+	}
 }
 .lifechange__title {
 	color: #fff;
@@ -30,12 +44,27 @@
 	margin-top: -220px;
 	margin-left: -190px;
 	max-width: 792px;
+
+	@media (max-width: 768px) {
+		margin-top: unset;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 500px;
+	}
 }
 
 .lifechange__img {
 	display: block;
 	width: 100%;
 	height: 100%;
+}
+
+.lifechange__button {
+	@media (max-width: 768px) {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .lifechange__decor-left {
@@ -50,13 +79,17 @@
 	background-position: left;
 	background-repeat: no-repeat;
 	pointer-events: var(--pi-decor);
+
+	@media (max-width: 1199px) {
+		display: none;
+	}
 }
 
 .lifechange__decor-right {
 	position: absolute;
-	top: -180px;
+	top: -120px;
 	right: 0;
-	height: 150%;
+	height: 130%;
 	max-width: 1300px;
 	width: 100%;
 	mix-blend-mode: soft-light;
@@ -65,4 +98,10 @@
 	background-position: right;
 	background-repeat: no-repeat;
 	pointer-events: var(--pi-decor);
+
+	@media (max-width: 1199px) {
+		top: -40px;
+		height: 110%;
+		max-width: 900px;
+	}
 }

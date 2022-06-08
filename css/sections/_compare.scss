@@ -3,6 +3,12 @@
 	padding-bottom: 140px;
 	position: relative;
 	z-index: 3;
+
+	@media (max-width: 991px) {
+		padding-top: 150px;
+		margin-top: -160px;
+		padding-bottom: 40px;
+	}
 }
 .compare::before {
 	content: "";
@@ -14,17 +20,38 @@
 	background-image: url("../img/compare/bg.png");
 	// @include bgset("../img/compare/bg", "png");
 	pointer-events: var(--pi-decor);
+
+	@media (max-width: 576px) {
+		top: -420px;
+	}
 }
 .compare__container {
 	display: flex;
 	justify-content: space-between;
 	max-width: 1126px;
+
+	@media (max-width: 991px) {
+		display: block;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .compare-card {
 	max-width: calc(50% - 16px);
 	width: 100%;
 	position: relative;
+
+	@media (max-width: 991px) {
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 991px) {
+	.compare-card::before {
+		z-index: 3;
+	}
 }
 .compare-card__inner {
 	position: relative;
@@ -82,24 +109,6 @@
 	}
 }
 @media (max-width: 991px) {
-	.compare {
-		padding-top: 150px;
-		margin-top: -160px;
-		padding-bottom: 260px;
-	}
-	.compare__container {
-		display: block;
-		max-width: 600px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.compare-card {
-		max-width: 100%;
-		margin-bottom: 20px;
-	}
-	.compare-card::before {
-		z-index: 3;
-	}
 	.compare-card:first-of-type::before {
 		top: unset;
 		right: -140px;

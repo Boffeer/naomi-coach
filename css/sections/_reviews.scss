@@ -2,6 +2,13 @@
 	padding-top: 10px;
 	position: relative;
 	z-index: 3;
+
+	@media (max-width: 1199px) {
+		padding-top: 50px;
+	}
+	@media (max-width: 576px) {
+		padding-top: 0;
+	}
 }
 
 .reviews__title {
@@ -77,9 +84,6 @@
 @media (max-width: 1199px) {
 	.reviews-slider__track {
 		max-width: calc(100% - 160px);
-	}
-	.reviews {
-		padding-top: 50px;
 	}
 }
 

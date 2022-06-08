@@ -10,12 +10,25 @@
 .why__title {
 	color: #fff;
 	margin-bottom: 70px;
+
+	@media (max-width: 576px) {
+		br {
+			display: none;
+		}
+	}
 }
 .why__gallery {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 30px;
 	margin-bottom: 70px;
+
+	@media (max-width: 1100px) {
+		display: block;
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 .why-card {
 	position: relative;
@@ -29,6 +42,17 @@
 		rgba(255, 255, 255, 0.2) 100%
 	);
 	border-radius: 20px;
+
+	@media (max-width: 1100px) {
+		margin-bottom: 20px;
+	}
+	@media (max-width: 911px) {
+		overflow: hidden;
+	}
+	@media (max-width: 576px) {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 .why-card::before {
 	content: "";
@@ -51,6 +75,12 @@
 	padding-bottom: 42px;
 	max-width: 370px;
 	width: 100%;
+
+	@media (max-width: 576px) {
+		padding: 25px;
+		padding-right: 20px;
+		padding-bottom: 5px;
+	}
 }
 .why-card__title {
 	color: #fff;
@@ -59,6 +89,12 @@
 	font-size: 18px;
 	line-height: 145%;
 	letter-spacing: 0.05em;
+
+	@media (max-width: 1200px) {
+		br {
+			display: none;
+		}
+	}
 }
 .why-card__desc {
 	color: #fff;
@@ -66,6 +102,12 @@
 	font-size: 18px;
 	line-height: 145%;
 	letter-spacing: 0.05em;
+
+	@media (max-width: 1200px) {
+		br {
+			display: none;
+		}
+	}
 }
 .why-card__pic {
 	position: relative;
@@ -89,17 +131,42 @@
 .why-card:nth-of-type(2) .why-card__pic {
 	margin-top: -10px;
 	min-width: 220px;
+
+	@media (max-width: 1100px) {
+		max-width: 230px;
+	}
+	@media (max-width: 576px) {
+		margin-top: -20px;
+		margin-bottom: 20px;
+	}
 }
 .why-card:nth-of-type(3) .why-card__pic {
 	min-width: 320px;
 	margin-left: -40px;
 	margin-right: -40px;
 	height: 238px;
+	@media (max-width: 1100px) {
+		height: 190px;
+	}
+	@media (max-width: 576px) {
+	}
 }
 .why-card:nth-of-type(4) .why-card__pic {
 	margin-right: 18px;
 	min-width: 200px;
 	margin-top: -2px;
+	@media (max-width: 1100px) {
+		max-width: 220px;
+		height: 160px;
+		align-self: center;
+	}
+	@media (max-width: 576px) {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 100%;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
 }
 
 .why__divider-bottom {
@@ -111,4 +178,14 @@
 	background-image: url(../img/why/divider-bottom.png);
 	background-size: cover;
 	background-repeat: no-repeat;
+
+	@media (max-width: 1100px) {
+		bottom: -280px;
+		height: 900px;
+	}
+	@media (max-width: 576px) {
+		height: 970px;
+		bottom: -300px;
+		background-position-x: 80%;
+	}
 }
